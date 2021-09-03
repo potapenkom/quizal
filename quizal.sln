@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizal.models", "quizal.models\quizal.models.csproj", "{3A3A50B6-A31A-48CB-B321-49907620B429}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizal.models", "quizal.models\quizal.models.csproj", "{3A3A50B6-A31A-48CB-B321-49907620B429}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizal.data", "quize.data\quizal.data.csproj", "{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizal.Web", "quizal.Web\quizal.Web.csproj", "{8D5491A9-C847-4BEB-9A30-3E04284CF273}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,9 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3A3A50B6-A31A-48CB-B321-49907620B429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +31,35 @@ Global
 		{3A3A50B6-A31A-48CB-B321-49907620B429}.Release|x64.Build.0 = Release|Any CPU
 		{3A3A50B6-A31A-48CB-B321-49907620B429}.Release|x86.ActiveCfg = Release|Any CPU
 		{3A3A50B6-A31A-48CB-B321-49907620B429}.Release|x86.Build.0 = Release|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Debug|x64.Build.0 = Debug|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Debug|x86.Build.0 = Debug|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Release|x64.ActiveCfg = Release|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Release|x64.Build.0 = Release|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}.Release|x86.Build.0 = Release|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Debug|x64.Build.0 = Debug|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Debug|x86.Build.0 = Debug|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Release|x64.ActiveCfg = Release|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Release|x64.Build.0 = Release|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Release|x86.ActiveCfg = Release|Any CPU
+		{8D5491A9-C847-4BEB-9A30-3E04284CF273}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA008279-992E-4570-8F9C-E7E90BE00941}
 	EndGlobalSection
 EndGlobal
