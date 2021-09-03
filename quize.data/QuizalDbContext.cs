@@ -12,6 +12,13 @@ namespace quizal.data
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+        }
+
+
         public DbSet<Quiz> Quizzes { get; set; }
 
         public DbSet<Question> Questions { get; set; }
