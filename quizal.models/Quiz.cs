@@ -18,5 +18,7 @@ namespace quizal.models
         public List<Question> QuizQuestions { get; set; } = new List<Question>();
 
         public string QuizLogoUrl { get; set; }
+
+        public string Description { get; set; }
     }
 }

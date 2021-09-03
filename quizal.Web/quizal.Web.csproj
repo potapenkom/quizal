@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-quizal.Web-ED3DD9FC-0F74-4799-BFE5-D607DC256B29</UserSecretsId>
+    <UserSecretsId>aspnet-quizal.Web-EC8D7A9C-5AF6-49B6-AB94-077318F878D0</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +11,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\quizal.models\quizal.models.csproj" />
+    <ProjectReference Include="..\quize.data\quizal.data.csproj" />
   </ItemGroup>
 
 </Project>
