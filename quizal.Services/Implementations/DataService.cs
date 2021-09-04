@@ -1,7 +1,7 @@
 ﻿using quizal.data;
 using System;
 
-namespace quizal.Services
+namespace quizal.Services.Implementations
 {
     public class DataService
     {

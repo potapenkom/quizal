@@ -8,14 +8,15 @@ namespace quizal.data
     public class QuizalDbContext : IdentityDbContext<QuizalUser>
     {
         public QuizalDbContext(DbContextOptions<QuizalDbContext> options)
-            : base()
+            : base(options)
         {
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<UserAchievement>()
+                .HasKey(ua => new { ua.UserId, ua.AchievementId });
             base.OnModelCreating(builder);
-
         }
 
 
