@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using quizal.Services.Interfaces;
 using quizal.Web.Models;
 using System;
 using System.Collections.Generic;
@@ -12,6 +14,9 @@ namespace quizal.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IMapper mapper;
+        private readonly IQuizService quizService;
+
 
         public HomeController(ILogger<HomeController> logger)
         {

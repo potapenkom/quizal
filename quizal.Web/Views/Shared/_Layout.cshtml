@@ -10,24 +10,21 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">quizal.Web</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" title="Home">Home</a></li>
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Quiz" asp-action="CreateQuiz" title="Create Quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Question" asp-action="AddQuestion" title="Add Question">Add Question</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="QuestionSuggestion" asp-action="AllSuggestions" title="All Suggestions">All Suggestions</a></li>
+                 }
+                <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="QuestionSuggestion" asp-action="SuggestQuestion" title="Suggest questions">Suggest questions</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Achievement" asp-action="AllAchievements" title="Achievements">Suggest questions</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Ranklist" title="Ranklist">Rank list</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="UserResult" asp-action="MyResults">My Results</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Achievement" asp-action="MyAchievements">My Achievements</a></li>
+                <li class="nav-item"><partial name="_LoginPartial" /></li>
+            </ul>
         </nav>
     </header>
     <div class="container">

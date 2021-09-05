@@ -24,9 +24,9 @@ namespace quizal.data
 
         public DbSet<Question> Questions { get; set; }
 
-        public DbSet<QuizalUser> UserResults { get; set; }
+        public DbSet<UserResult> UserResults { get; set; }
 
-        public DbSet<QuizalUser> UserAchievement { get; set; }
+        public DbSet<UserAchievement> UserAchievement { get; set; }
 
     }
 }

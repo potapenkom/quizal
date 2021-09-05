@@ -12,11 +12,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10" />
+    <PackageReference Include="ReflectionIT.Mvc.Paging" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\quizal.Common\quizal.Common.csproj" />
     <ProjectReference Include="..\quizal.models\quizal.models.csproj" />
+    <ProjectReference Include="..\quizal.Services\quizal.Services.csproj" />
     <ProjectReference Include="..\quize.data\quizal.data.csproj" />
   </ItemGroup>
 

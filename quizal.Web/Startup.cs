@@ -1,19 +1,15 @@
-﻿using System;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using quizal.Common;
 using quizal.data;
 using quizal.models;
+using quizal.Common.ServiceModels;
+using quizal.Common.Mapper;
 
 namespace quizal.Web
 {
@@ -41,7 +37,9 @@ namespace quizal.Web
                 options.Password.RequireUppercase = false;
             })
                 .AddDefaultUI()
-                .AddEntityFrameworkStores<QuizalDbContext>();
+                .AddEntityFrameworkStores<QuizalDbContext>()
+                .AddTokenProvider<DataProtectorTokenProvider<QuizalUser>>(TokenOptions.DefaultProvider);
+            services.AddAutoMapper(typeof(AutoMapperConfiguration));
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
