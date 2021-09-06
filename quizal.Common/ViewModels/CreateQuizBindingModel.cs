@@ -18,5 +18,10 @@ namespace quizal.Common.ViewModels
         [Required(ErrorMessage = "Logo is required!")]
         [Url]
         public string QuizLogoUrl { get; set; }
+
+        [Required(ErrorMessage = "Name is required and must be maximum 100 symbols!")]
+        [StringLength(100)]
+        public string Description { get; set; }
+
     }
 }

@@ -10,6 +10,8 @@ using quizal.data;
 using quizal.models;
 using quizal.Common.ServiceModels;
 using quizal.Common.Mapper;
+using quizal.Services.Interfaces;
+using quizal.Services.Implementations;
 
 namespace quizal.Web
 {
@@ -42,6 +44,15 @@ namespace quizal.Web
             services.AddAutoMapper(typeof(AutoMapperConfiguration));
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddScoped<IQuizService, QuizService>();
+            services.AddScoped<IQuestionService, QuestionService>();
+            services.AddScoped<IUserResultService, UserResultService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IQuestionSuggestionService, QuestionSuggestionService>();
+            services.AddScoped<IAchievementService, AchievementService>();
+
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

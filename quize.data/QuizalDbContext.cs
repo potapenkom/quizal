@@ -26,7 +26,11 @@ namespace quizal.data
 
         public DbSet<UserResult> UserResults { get; set; }
 
-        public DbSet<UserAchievement> UserAchievement { get; set; }
+        public DbSet<QuestionSuggestion> QuestionSuggestions { get; set; }
+
+        public DbSet<Achievement> Achievements { get; set; }
+
+        public DbSet<UserAchievement> UserAchievements { get; set; }
 
     }
 }

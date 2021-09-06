@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizal.models", "quizal.mod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizal.data", "quize.data\quizal.data.csproj", "{F8CBCA6F-C1FD-4685-907C-3AE71FCF4042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizal.Tests", "quizal.Tests\quizal.Tests.csproj", "{AB0BF28B-3B03-4910-9AD1-C57B8345602E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizal.Tests", "quizal.Tests\quizal.Tests.csproj", "{AB0BF28B-3B03-4910-9AD1-C57B8345602E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizal.Web", "quizal.Web\quizal.Web.csproj", "{80A5D1CE-982D-4245-BDAA-CD2715EF9346}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizal.Web", "quizal.Web\quizal.Web.csproj", "{80A5D1CE-982D-4245-BDAA-CD2715EF9346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizal.Common", "quizal.Common\quizal.Common.csproj", "{C0786258-00A2-46FA-A6D2-95A59D5D1A9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizal.Common", "quizal.Common\quizal.Common.csproj", "{C0786258-00A2-46FA-A6D2-95A59D5D1A9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizal.Services", "quizal.Services\quizal.Services.csproj", "{B3756203-2433-43D1-89A4-760EB33316F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quizal.Services", "quizal.Services\quizal.Services.csproj", "{B3756203-2433-43D1-89A4-760EB33316F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

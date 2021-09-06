@@ -23,7 +23,7 @@ namespace quizal.Common
                     roleManager.CreateAsync(new IdentityRole("Admin")).Wait();
                 }
 
-                if (userManager.FindByNameAsync("admin").Result == null)
+                if (userManager.FindByEmailAsync("admin@admin.com").Result == null)
                 {
                     var adminUser = new QuizalUser();
                     adminUser.UserName = "admin";

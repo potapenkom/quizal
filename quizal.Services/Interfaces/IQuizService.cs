@@ -1,4 +1,5 @@
-﻿using quizal.models;
+﻿using quizal.Common.ServiceModels;
+using quizal.models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,15 @@ namespace quizal.Services.Interfaces
 {
     public interface IQuizService
     {
-        Task<IEnumerable<QuizalUser>> GetUsersByTotalPoints();
+        Task CreateQuiz(Quiz quiz);
+
+        Task DeleteQuiz(int id);
+
+        Task<IEnumerable<Quiz>> AllQuizzes();
+
+        Task<Quiz> GetQuizById(int id);
+
+        Task StartQuiz(QuizServiceModel model, string username);
+
     }
 }
